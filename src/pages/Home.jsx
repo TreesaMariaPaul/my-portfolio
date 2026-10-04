@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <main className="home-page">
@@ -23,13 +24,13 @@ function Home() {
         </p>
 
         <div className="home-buttons">
-          <a href="/about" className="btn">
+          <Link to="/about" className="btn">
             About Me
-          </a>
+          </Link>
 
-          <a href="/professional-knowledge" className="btn btn-outline">
+          <Link to="/professional" className="btn btn-outline">
             Explore My Skills
-          </a>
+          </Link>
         </div>
       </div>
     </main>
