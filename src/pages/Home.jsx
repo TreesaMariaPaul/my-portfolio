@@ -28,7 +28,7 @@ function Home() {
             About Me
           </Link>
 
-          <Link to="/professional" className="btn btn-outline">
+          <Link to="/professional-knowledge" className="btn btn-outline">
             Explore My Skills
           </Link>
         </div>
