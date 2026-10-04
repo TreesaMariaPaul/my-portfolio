@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <nav className="navbar">
 
-      <NavLink to="/" className="logo">
+      <NavLink to="/" end className="logo">
         My Portfolio
       </NavLink>
 
@@ -26,21 +26,10 @@ function Navbar() {
           Professional Knowledge
         </NavLink>
 
-        <NavLink to="/gallery">
-          Gallery
-        </NavLink>
-
-        <NavLink to="/videos">
-          Video Gallery
-        </NavLink>
-
         <NavLink to="/blog">
           Blog
         </NavLink>
 
-        <NavLink to="/messaging">
-          Messaging
-        </NavLink>
 
         <NavLink to="/readme">
           Readme

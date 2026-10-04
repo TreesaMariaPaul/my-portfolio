@@ -1,6 +1,5 @@
 import PageNavigation from "../components/PageNavigation"
 
-
 function Readme() {
   return (
     <main className="readme-page">
@@ -21,7 +20,7 @@ function Readme() {
 
         <p className="readme-intro">
           An overview of the structure, technologies, features,
-          development process, and software evolution of this
+          development process, and software evolution of my
           digital portfolio.
         </p>
 
@@ -52,25 +51,25 @@ function Readme() {
             </h2>
 
             <p>
-              This digital portfolio was developed as a
-              React-based web application to present my
-              academic background, professional knowledge,
-              software projects, learning experiences, and
-              development journey.
+              This digital portfolio is a React-based web
+              application created to present my academic
+              background, professional knowledge, software
+              projects, learning experiences, and personal
+              interests.
             </p>
 
             <p>
-              The portfolio was designed as a multi-page
-              application with a consistent user interface,
-              responsive layouts, interactive features, and
-              structured navigation between different sections.
+              The portfolio uses a multi-page structure with
+              consistent navigation, responsive layouts,
+              reusable components, interactive features, and
+              multimedia content.
             </p>
 
             <p>
-              The project was developed incrementally, allowing
-              new functionality, improvements, and structural
-              changes to be introduced throughout the development
-              process.
+              The application was developed incrementally,
+              allowing new pages, features, improvements, and
+              design changes to be introduced throughout the
+              development process.
             </p>
 
           </div>
@@ -108,45 +107,26 @@ function Readme() {
               </li>
 
               <li>
-                <strong>Education:</strong> Academic background
-                and current postgraduate studies.
+                <strong>Education:</strong> Academic background,
+                BCA studies, and current postgraduate education.
               </li>
 
               <li>
                 <strong>Professional Knowledge:</strong>
                 Technical knowledge, programming skills,
-                software development, and technologies.
+                software development concepts, and technologies.
               </li>
 
               <li>
-                <strong>Gallery:</strong> Collection of
-                software projects, development work, and
-                academic achievement.
+                <strong>Blog:</strong> A section for sharing
+                learning experiences, technical topics, and
+                software-related content.
               </li>
 
               <li>
-                <strong>Video Gallery:</strong> Project
-                demonstration videos showcasing software
-                development work.
-              </li>
-
-              <li>
-                <strong>Blog:</strong> Articles describing
-                software development, learning experiences,
-                and technical interests.
-              </li>
-
-              <li>
-                <strong>Messaging:</strong> An interactive
-                messaging facility implemented using React
-                state management.
-              </li>
-
-              <li>
-                <strong>Readme:</strong> Documentation
-                describing the portfolio structure,
-                technologies, development approach, and
-                software evolution.
+                <strong>Readme:</strong> Project documentation
+                describing the portfolio, technologies,
+                development process, and software evolution.
               </li>
 
             </ul>
@@ -175,31 +155,32 @@ function Readme() {
             <div className="technology-tags">
 
               <span>React</span>
-
               <span>JavaScript</span>
-
               <span>HTML</span>
-
               <span>CSS</span>
-
               <span>Vite</span>
-
               <span>React Router</span>
 
             </div>
 
             <p>
-              React is used to develop the user interface
-              through reusable components and individual
-              pages. JavaScript provides the application
-              functionality and interaction.
+              React is used to build the user interface through
+              reusable components and individual pages.
+              JavaScript provides the application functionality
+              and interactive behaviour.
             </p>
 
             <p>
-              HTML and CSS are used to structure and style
-              the application. Vite is used as the development
-              and build tool, while React Router provides
-              navigation between the different portfolio pages.
+              HTML provides the structure of the application,
+              while CSS is used for styling, layouts,
+              animations, responsive design, and visual
+              presentation.
+            </p>
+
+            <p>
+              Vite is used as the development and build tool,
+              while React Router is used to provide navigation
+              between the different portfolio pages.
             </p>
 
           </div>
@@ -224,23 +205,18 @@ function Readme() {
             </h2>
 
             <p>
-              This portfolio was developed through an
-              incremental software evolution process. Instead
-              of treating the application as a single finished
-              product, the system was progressively modified,
-              extended, refined, and reorganised as new
-              requirements and improvements were identified.
+              The portfolio was developed through an
+              incremental software evolution process. The
+              application was progressively modified,
+              extended, reorganised, and improved as new
+              requirements and ideas were introduced.
             </p>
 
             <p>
-              The evolution of the portfolio can be represented
-              through the following development stages:
+              The development process can be represented
+              through the following stages:
             </p>
 
-
-            {/* =============================================
-                EVOLUTION TIMELINE
-            ============================================= */}
 
             <div className="evolution-timeline">
 
@@ -249,9 +225,7 @@ function Readme() {
 
               <div className="evolution-step">
 
-                <span>
-                  01
-                </span>
+                <span>01</span>
 
                 <div>
 
@@ -260,9 +234,9 @@ function Readme() {
                   </h3>
 
                   <p>
-                    Basic portfolio pages and content were
-                    established as the starting point of the
-                    application.
+                    The initial portfolio structure and basic
+                    content were established as the starting
+                    point of the application.
                   </p>
 
                 </div>
@@ -274,20 +248,18 @@ function Readme() {
 
               <div className="evolution-step">
 
-                <span>
-                  02
-                </span>
+                <span>02</span>
 
                 <div>
 
                   <h3>
-                    Basic Portfolio Pages
+                    Portfolio Pages
                   </h3>
 
                   <p>
                     Individual sections such as Home, About,
-                    Education, Professional Knowledge, Gallery,
-                    Blog, and Readme were introduced.
+                    Education, Professional Knowledge, Blog,
+                    and Readme were introduced.
                   </p>
 
                 </div>
@@ -299,9 +271,7 @@ function Readme() {
 
               <div className="evolution-step">
 
-                <span>
-                  03
-                </span>
+                <span>03</span>
 
                 <div>
 
@@ -310,9 +280,9 @@ function Readme() {
                   </h3>
 
                   <p>
-                    The application was reorganised into React
+                    The application was organised into React
                     pages and reusable components to improve
-                    structure and maintainability.
+                    structure, readability, and maintainability.
                   </p>
 
                 </div>
@@ -324,9 +294,7 @@ function Readme() {
 
               <div className="evolution-step">
 
-                <span>
-                  04
-                </span>
+                <span>04</span>
 
                 <div>
 
@@ -349,9 +317,7 @@ function Readme() {
 
               <div className="evolution-step">
 
-                <span>
-                  05
-                </span>
+                <span>05</span>
 
                 <div>
 
@@ -362,7 +328,7 @@ function Readme() {
                   <p>
                     Common functionality such as the navigation
                     bar and page navigation was separated into
-                    reusable components.
+                    reusable React components.
                   </p>
 
                 </div>
@@ -374,9 +340,7 @@ function Readme() {
 
               <div className="evolution-step">
 
-                <span>
-                  06
-                </span>
+                <span>06</span>
 
                 <div>
 
@@ -385,10 +349,9 @@ function Readme() {
                   </h3>
 
                   <p>
-                    Interactive functionality was introduced
-                    using React state management, including
-                    the messaging facility and full-screen
-                    image viewing.
+                    Interactive functionality was progressively
+                    introduced as new features were developed
+                    for the portfolio.
                   </p>
 
                 </div>
@@ -400,21 +363,19 @@ function Readme() {
 
               <div className="evolution-step">
 
-                <span>
-                  07
-                </span>
+                <span>07</span>
 
                 <div>
 
                   <h3>
-                    Responsive UI Improvements
+                    Visual and Responsive Improvements
                   </h3>
 
                   <p>
-                    The visual design was progressively refined
-                    with responsive layouts, consistent styling,
-                    hover effects, navigation controls, and
-                    improved presentation of project content.
+                    The interface was progressively improved
+                    through responsive layouts, consistent
+                    styling, hover effects, navigation controls,
+                    and improved content presentation.
                   </p>
 
                 </div>
@@ -426,9 +387,7 @@ function Readme() {
 
               <div className="evolution-step">
 
-                <span>
-                  08
-                </span>
+                <span>08</span>
 
                 <div>
 
@@ -437,10 +396,9 @@ function Readme() {
                   </h3>
 
                   <p>
-                    The Gallery and Video Gallery were extended
-                    to present project images, academic
-                    achievement, and software project
-                    demonstrations.
+                    Multimedia support was incorporated into the
+                    project structure to allow images and videos
+                    to be used throughout the portfolio.
                   </p>
 
                 </div>
@@ -452,9 +410,7 @@ function Readme() {
 
               <div className="evolution-step evolution-final">
 
-                <span>
-                  09
-                </span>
+                <span>09</span>
 
                 <div>
 
@@ -463,17 +419,15 @@ function Readme() {
                   </h3>
 
                   <p>
-                    The current version combines multiple pages,
-                    reusable React components, structured
-                    navigation, interactive functionality,
-                    responsive design, multimedia content,
-                    and project documentation.
+                    The current version combines multiple React
+                    pages, reusable components, structured
+                    navigation, responsive design, multimedia
+                    support, and project documentation.
                   </p>
 
                 </div>
 
               </div>
-
 
             </div>
 
@@ -501,16 +455,12 @@ function Readme() {
             <p>
               The changes made during the development of the
               portfolio can be related to common software
-              evolution categories. These categories help
-              explain why different changes were introduced
-              during the development process.
+              evolution categories.
             </p>
 
 
             <div className="taxonomy-grid">
 
-
-              {/* CORRECTIVE */}
 
               <div className="taxonomy-item">
 
@@ -521,16 +471,13 @@ function Readme() {
                 <p>
                   Corrective changes involve identifying and
                   fixing problems in the existing software.
-                  During development, layout issues, navigation
-                  problems, styling conflicts, and other
-                  implementation errors were corrected to
-                  improve the functionality of the portfolio.
+                  Layout issues, navigation problems, styling
+                  conflicts, and implementation errors were
+                  corrected during development.
                 </p>
 
               </div>
 
-
-              {/* ADAPTIVE */}
 
               <div className="taxonomy-item">
 
@@ -539,19 +486,15 @@ function Readme() {
                 </h3>
 
                 <p>
-                  Adaptive evolution involves modifying
-                  software so that it can work with changing
-                  requirements or environments. The portfolio
-                  was adapted as new assignment requirements
-                  were introduced, including additional pages,
-                  React Router navigation, multimedia content,
-                  and interactive functionality.
+                  Adaptive evolution involves modifying software
+                  to meet changing requirements or environments.
+                  New pages, navigation features, multimedia
+                  content, and functionality were introduced as
+                  requirements changed.
                 </p>
 
               </div>
 
-
-              {/* PERFECTIVE */}
 
               <div className="taxonomy-item">
 
@@ -561,18 +504,14 @@ function Readme() {
 
                 <p>
                   Perfective evolution focuses on improving
-                  existing software features and the user
-                  experience. The portfolio was progressively
-                  improved through better layouts, responsive
-                  design, visual consistency, navigation
-                  controls, image presentation, and interactive
-                  elements.
+                  existing functionality and user experience.
+                  The portfolio was enhanced through better
+                  layouts, responsive design, visual consistency,
+                  navigation, and interactive elements.
                 </p>
 
               </div>
 
-
-              {/* PREVENTIVE */}
 
               <div className="taxonomy-item">
 
@@ -581,12 +520,11 @@ function Readme() {
                 </h3>
 
                 <p>
-                  Preventive evolution involves making changes
-                  that improve maintainability and reduce
-                  potential future problems. Separating the
-                  application into reusable React components
-                  and individual pages makes the portfolio
-                  easier to maintain and extend.
+                  Preventive evolution focuses on improving
+                  maintainability and reducing potential future
+                  problems. Reusable components and separate
+                  page structures make the application easier
+                  to maintain and extend.
                 </p>
 
               </div>
@@ -619,20 +557,19 @@ function Readme() {
               The portfolio follows a component-based
               development approach. Common functionality is
               separated into reusable components, while
-              individual portfolio sections are implemented
-              as separate React pages.
+              individual sections are implemented as separate
+              React pages.
             </p>
 
             <p>
               This structure makes the application easier to
               maintain and modify because changes to individual
               pages or reusable components can be made without
-              unnecessarily affecting the rest of the
-              application.
+              unnecessarily affecting the rest of the application.
             </p>
 
             <p>
-              Responsive design techniques were also used so
+              Responsive design techniques are also used so
               that the portfolio can adapt to different screen
               sizes, including desktop, tablet, and mobile
               devices.
@@ -667,26 +604,30 @@ function Readme() {
 │   └── PageNavigation.jsx
 │
 ├── pages/
-│   ├── Home.jsx
 │   ├── About.jsx
-│   ├── Education.jsx
-│   ├── ProfessionalKnowledge.jsx
-│   ├── Gallery.jsx
-│   ├── VideoGallery.jsx
 │   ├── Blog.jsx
-│   ├── Messaging.jsx
+│   ├── Education.jsx
+│   ├── Home.jsx
+│   ├── ProfessionalKnowledge.jsx
 │   └── Readme.jsx
 │
-├── App.jsx
 ├── App.css
-└── index.css
+├── App.jsx
+├── index.css
+└── main.jsx
 
 public/
 │
 ├── images/
+│   └── home-bg.avif
 │
 └── videos/
-    └── crop-disease-demo.mp4`}
+
+index.html
+package.json
+package-lock.json
+vite.config.js
+README.md`}
             </pre>
 
           </div>
@@ -729,15 +670,11 @@ public/
               </li>
 
               <li>
-                Interactive image gallery
+                Custom CSS styling
               </li>
 
               <li>
-                Full-screen image viewing
-              </li>
-
-              <li>
-                Crop Disease Detection project demonstration
+                Academic and professional information
               </li>
 
               <li>
@@ -745,7 +682,7 @@ public/
               </li>
 
               <li>
-                Interactive messaging interface
+                Multimedia support
               </li>
 
               <li>
@@ -778,25 +715,24 @@ public/
             <p>
               The development of this portfolio demonstrates
               an incremental approach to software evolution.
-              New pages, components, visual improvements, and
-              interactive features were introduced throughout
-              the development process.
+              New pages, reusable components, visual
+              improvements, and functionality were introduced
+              throughout the development process.
             </p>
 
             <p>
               The application structure was progressively
               improved to make the portfolio more organised,
-              maintainable, reusable, and user-friendly.
-              The current version represents the result of
-              these successive changes and refinements.
+              maintainable, reusable, responsive, and
+              user-friendly.
             </p>
 
             <p>
-              The evolution process also demonstrates how
-              software can be continuously adapted after its
-              initial implementation to address new
-              requirements, improve existing functionality,
-              correct problems, and support future extension.
+              The evolution process demonstrates how software
+              can be continuously adapted after its initial
+              implementation to address new requirements,
+              improve existing functionality, correct problems,
+              and support future development.
             </p>
 
           </div>
@@ -805,7 +741,19 @@ public/
 
 
       </div>
-      <PageNavigation previous="/messaging" previousLabel="Messaging" next="/contact" nextLabel="Contact" />
+
+
+      {/* =====================================================
+          PAGE NAVIGATION
+      ===================================================== */}
+
+      <PageNavigation
+        previous="/blog"
+        previousLabel="Blog"
+        next="/"
+        nextLabel="Home"
+      />
+
     </main>
   )
 }

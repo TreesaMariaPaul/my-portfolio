@@ -207,7 +207,7 @@ function ProfessionalKnowledge() {
 
       </div>
       
-      <PageNavigation previous="/education" previousLabel="Education" next="/gallery" nextLabel="Gallery" />
+      <PageNavigation previous="/education" previousLabel="Education" next="/blog" nextLabel="Blog" />
     </main>
   )
 }

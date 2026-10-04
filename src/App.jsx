@@ -5,11 +5,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Education from "./pages/Education";
 import ProfessionalKnowledge from "./pages/ProfessionalKnowledge";
-import Gallery from "./pages/Gallery";
-import VideoGallery from "./pages/VideoGallery"
 import Blog from "./pages/Blog";
-import Messaging from "./pages/Messaging"
-import Readme from "./pages/Readme"
+
+import Readme from "./pages/Readme";
 
 import "./App.css";
 
@@ -20,16 +18,19 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+
         <Route path="/about" element={<About />} />
+
         <Route path="/education" element={<Education />} />
+
         <Route
           path="/professional-knowledge"
           element={<ProfessionalKnowledge />}
         />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/videos" element={<VideoGallery />} />
+
         <Route path="/blog" element={<Blog />} />
-        <Route path="/messaging" element={<Messaging />} />
+
+        
         <Route path="/readme" element={<Readme />} />
       </Routes>
     </BrowserRouter>

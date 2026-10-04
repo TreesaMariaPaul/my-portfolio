@@ -125,7 +125,7 @@ function Blog() {
         </article>
 
       </div>
-      <PageNavigation previous="/videos" previousLabel="Video Gallery" next="/messaging" nextLabel="Messaging" />
+          <PageNavigation previous="/professional-knowledge" previousLabel="Professional Knowledge" next="/readme" nextLabel="Readme" />
 
     </main>
   )
