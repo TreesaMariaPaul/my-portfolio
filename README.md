@@ -1,84 +1,74 @@
-# Digital Portfolio – Software Engineering
+# My Portfolio
 
-## 1. Introduction
+Welcome to my personal portfolio website.
 
-This project is a digital portfolio developed as part of my MSc Software Engineering studies at the University of Limerick.
+This portfolio showcases my academic journey, professional knowledge, interests, and learning experiences as a Software Engineering student.
 
-The purpose of this portfolio is to present my academic background, professional knowledge, software projects, learning experiences, and technical skills through an interactive web application.
+## About Me
 
-The portfolio was developed using React and demonstrates the application of software engineering concepts, component-based development, routing, responsive design, and interactive functionality.
+Hello! I am Treesa Maria Paul, a Software Engineering student interested in software development, programming, and technology.
 
----
+I enjoy learning new technologies and building projects that help me improve my technical and problem-solving skills.
 
-## 2. Portfolio Structure
+## Education
 
-The portfolio consists of the following sections:
+- **MSc Software Engineering**
+  - University of Limerick, Ireland
+  - 2026 – 2027
 
-### Home
-The Home page provides an introduction to the portfolio and presents a brief overview of my interests in software engineering and technology.
+- **Bachelor of Computer Applications (BCA)**
+  - SCMS School of Technology and Management
+  - 2022 – 2025
 
-### About
-The About page provides information about me, my interests, and my goals as a software engineering student.
+## Professional Knowledge
 
-### Education
-The Education page presents my academic background, including my Bachelor of Computer Applications and my current MSc Software Engineering studies at the University of Limerick.
+The portfolio includes my knowledge and experience in areas such as:
 
-### Professional Knowledge
-This section presents my technical knowledge and skills related to programming, web development, software engineering, and development tools.
+- C++
+- HTML
+- CSS
+- JavaScript
+- PHP
+- MySQL
+- Django
+- React
+- Node.js
+- Java
 
-### Gallery
-The Gallery page presents images related to my software projects and academic achievements.
+I am continuously developing my technical knowledge through academic work, projects, and practical learning.
 
-### Video Gallery
-The Video Gallery provides demonstrations of software projects and their functionality.
+## Blog
 
-### Blog
-The Blog section provides a space for sharing learning experiences, software engineering topics, and project-related reflections.
+The Blog section contains posts related to software engineering, technology, learning experiences, and topics that interest me.
 
-### Instant Messaging
-The Instant Messaging section provides an interactive messaging interface where users can type and send messages.
+## Portfolio Features
 
-### Readme
-This page describes the structure, technologies, features, and evolution of the portfolio.
+- Responsive portfolio website
+- Home page
+- About Me section
+- Education section
+- Professional Knowledge section
+- Blog section
+- Interactive navigation
+- Responsive design for different screen sizes
+- Modern and minimal user interface
 
----
-
-## 3. Technologies Used
-
-The portfolio was developed using the following technologies:
+## Technologies Used
 
 - React
 - JavaScript
-- HTML
-- CSS
-- React Router
+- HTML5
+- CSS3
 - Vite
-- Git
-- GitHub
-- Visual Studio Code
 
----
-
-## 4. Project Structure
-
-The main project structure is organised as follows:
+## Project Structure
 
 ```text
 my-portfolio/
 │
 ├── public/
-│   ├── images/
-│   │   ├── home-bg.avif
-│   │   ├── portfolio-project.png
-│   │   ├── project_development.png
-│   │   ├── db-crop.png
-│   │   ├── eco_recycle-project.png
-│   │   ├── xampp-eco.png
-│   │   └── degree-certificate.jpg
-│   │
-│   └── videos/
-│       ├── portfolio.mp4
-│       └── crop.mp4
+│   └── images/
+│       └── home-bg.avif
 │
 ├── src/
 │   ├── components/
@@ -90,16 +80,17 @@ my-portfolio/
 │   │   ├── About.jsx
 │   │   ├── Education.jsx
 │   │   ├── ProfessionalKnowledge.jsx
-│   │   ├── Gallery.jsx
-│   │   ├── VideoGallery.jsx
 │   │   ├── Blog.jsx
-│   │   ├── Messaging.jsx
 │   │   └── Readme.jsx
 │   │
-│   ├── App.jsx
 │   ├── App.css
+│   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
 │
+├── .gitignore
+├── index.html
 ├── package.json
-└── README.md
+├── package-lock.json
+├── README.md
+└── vite.config.js
