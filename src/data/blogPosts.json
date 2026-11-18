@@ -1,0 +1,33 @@
+
+[
+  {
+    "id": 1,
+    "number": "01",
+    "category": "SOFTWARE DEVELOPMENT",
+    "title": "My Journey into Software Development",
+    "paragraphs": [
+      "My interest in software development began during my studies in computer applications. Through academic projects and practical learning, I developed an interest in creating software solutions and exploring new technologies.",
+      "I am continuing to develop my knowledge of programming, web development, software engineering, and modern technologies as I progress through my studies."
+    ]
+  },
+  {
+    "id": 2,
+    "number": "02",
+    "category": "REACT",
+    "title": "Learning React",
+    "paragraphs": [
+      "Learning React has introduced me to component-based development and a different way of building web applications.",
+      "While developing this portfolio, I have learned about React components, routing, state management, and organising a project into reusable sections."
+    ]
+  },
+  {
+    "id": 3,
+    "number": "03",
+    "category": "SOFTWARE ENGINEERING",
+    "title": "Building My Portfolio",
+    "paragraphs": [
+      "Developing this portfolio has given me an opportunity to apply software engineering concepts in a practical project.",
+      "The portfolio has evolved through different stages, including creating individual pages, introducing reusable components, adding navigation, and developing interactive features."
+    ]
+  }
+]

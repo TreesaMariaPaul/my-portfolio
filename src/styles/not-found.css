@@ -1,0 +1,38 @@
+
+/* =========================================================
+   404 NOT FOUND PAGE
+   ========================================================= */
+
+.not-found-page {
+  min-height: calc(100vh - 80px);
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+.not-found-code {
+  font-size: clamp(6rem, 18vw, 12rem);
+  font-weight: 800;
+  line-height: 1;
+  color: #d4a900;
+}
+
+.not-found-page h1 {
+  font-size: 2.5rem;
+}
+
+.not-found-page h1 span {
+  color: #d4a900;
+}
+
+.not-found-page p {
+  max-width: 500px;
+  margin-bottom: 30px;
+  color: #64748b;
+  line-height: 1.7;
+}

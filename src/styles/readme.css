@@ -1,0 +1,280 @@
+
+/* =========================================================
+   README PAGE
+   ========================================================= */
+
+.readme-page {
+  min-height: calc(100vh - 80px);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #fffdf5 0%, #fff8dc 50%, #ffffff 100%);
+  border-radius: 20px;
+}
+
+/* README HEADER */
+
+.readme-header {
+  max-width: 850px;
+  margin-bottom: 55px;
+}
+
+.readme-label {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 7px 16px;
+  color: #facc15;
+  background: #111111;
+  border: 1px solid #facc15;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.readme-header h1 {
+  margin: 0 0 20px;
+  color: #111111;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.readme-header h1 span {
+  color: #facc15;
+}
+
+.readme-intro {
+  max-width: 750px;
+  margin: 0;
+  color: #555555;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+/* README SECTIONS */
+
+.readme-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* README CARD */
+
+.readme-card {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 25px;
+  padding: 35px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.readme-card:hover {
+  transform: translateY(-4px);
+  border-color: #facc15;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* README NUMBER */
+
+.readme-number {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111111;
+  background: #facc15;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* README CONTENT */
+
+.readme-card h2 {
+  margin: 0 0 18px;
+  color: #111111;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.readme-card p {
+  margin: 0 0 16px;
+  color: #555555;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.readme-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* README LIST */
+
+.readme-list {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.readme-list li {
+  margin-bottom: 14px;
+  color: #555555;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.readme-list li:last-child {
+  margin-bottom: 0;
+}
+
+.readme-list strong {
+  color: #111111;
+}
+
+.readme-card .readme-list {
+  list-style-type: disc;
+}
+
+/* TECHNOLOGY TAGS */
+
+.technology-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.technology-tags span {
+  display: inline-block;
+  padding: 8px 15px;
+  color: #111111;
+  background: #fff8dc;
+  border: 1px solid #facc15;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* SOFTWARE EVOLUTION */
+
+.evolution-card {
+  border-left: 4px solid #facc15;
+}
+
+.evolution-timeline {
+  position: relative;
+  margin-top: 35px;
+  padding-left: 30px;
+  border-left: 2px solid #facc15;
+}
+
+.evolution-step {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 15px;
+}
+
+.evolution-step:last-child {
+  margin-bottom: 0;
+}
+
+.evolution-step > span {
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111111;
+  background: #facc15;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 700;
+  box-shadow: 0 0 0 5px #ffffff;
+}
+
+.evolution-step h3 {
+  margin: 0 0 8px;
+  color: #111111;
+  font-size: 1.2rem;
+}
+
+.evolution-step p {
+  margin: 0;
+  color: #555555;
+  line-height: 1.7;
+}
+
+.evolution-final {
+  padding: 20px;
+  background: #fffdf0;
+  border: 1px solid #facc15;
+  border-radius: 12px;
+}
+
+/* SOFTWARE EVOLUTION TAXONOMY */
+
+.taxonomy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.taxonomy-item {
+  padding: 25px;
+  background: #fffdf5;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.taxonomy-item:hover {
+  transform: translateY(-4px);
+  border-color: #facc15;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.taxonomy-item h3 {
+  margin: 0 0 12px;
+  color: #111111;
+  font-size: 1.2rem;
+}
+
+.taxonomy-item p {
+  margin: 0;
+  color: #555555;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* PROJECT STRUCTURE */
+
+.project-structure {
+  overflow-x: auto;
+  margin: 20px 0 0;
+  padding: 25px;
+  color: #facc15;
+  background: #111111;
+  border-radius: 10px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  white-space: pre;
+}

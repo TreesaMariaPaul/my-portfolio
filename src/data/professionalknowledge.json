@@ -1,0 +1,45 @@
+
+[
+  {
+    "id": 1,
+    "number": "01",
+    "title": "Programming Languages",
+    "description": "I have developed a foundation in programming through academic learning and practical projects. I have experience with different programming languages and understand fundamental programming concepts and problem-solving techniques.",
+    "technologies": "C++ · Java · Python · JavaScript · PHP"
+  },
+  {
+    "id": 2,
+    "number": "02",
+    "title": "Frontend Development",
+    "description": "I have knowledge of creating responsive and interactive web interfaces using modern frontend technologies. I understand component-based development, page structure, styling, navigation, and user interface design.",
+    "technologies": "HTML · CSS · JavaScript · React"
+  },
+  {
+    "id": 3,
+    "number": "03",
+    "title": "Backend Development",
+    "description": "I have knowledge of backend application development and understand how frontend applications communicate with server-side systems. I have worked with frameworks and technologies used to build functional web applications.",
+    "technologies": "Node.js · Django · PHP"
+  },
+  {
+    "id": 4,
+    "number": "04",
+    "title": "Database Management",
+    "description": "I have experience working with relational databases and understand database structures, tables, relationships, SQL queries, data management, and connecting databases with applications.",
+    "technologies": "MySQL · SQL · Database Design"
+  },
+  {
+    "id": 5,
+    "number": "05",
+    "title": "Software Engineering",
+    "description": "I have developed an understanding of software development practices through academic projects, including requirements analysis, application design, development, testing, debugging, and problem solving.",
+    "technologies": "Software Development · Testing · Debugging"
+  },
+  {
+    "id": 6,
+    "number": "06",
+    "title": "Development Tools & Technologies",
+    "description": "I am familiar with commonly used development tools and technologies for building, testing, managing, and maintaining software applications.",
+    "technologies": "Git · GitHub · VS Code · REST APIs"
+  }
+]

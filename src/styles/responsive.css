@@ -1,0 +1,307 @@
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .home-page {
+    min-height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .home-page h1 {
+    font-size: 4.5rem;
+  }
+
+  .about-page {
+    padding: 60px 25px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-goal {
+    grid-column: auto;
+  }
+
+  .education-page {
+    padding: 60px 25px;
+  }
+
+  .education-timeline::before {
+    display: none;
+  }
+
+  .education-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .education-year {
+    width: fit-content;
+  }
+
+  .professional-page {
+    padding: 60px 25px;
+  }
+
+  .professional-timeline::before {
+    display: none;
+  }
+
+  .professional-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .professional-number {
+    width: fit-content;
+  }
+
+  .readme-page {
+    padding: 70px 30px;
+  }
+
+  .readme-card {
+    grid-template-columns: 55px 1fr;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .taxonomy-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   TABLET / MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .blog-page {
+    padding: 60px 25px;
+  }
+
+  .blog-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 28px;
+  }
+
+  .blog-number {
+    font-size: 2rem;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .home-page {
+    padding: 60px 20px;
+  }
+
+  .home-page h1 {
+    font-size: 3rem;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .home-buttons .btn {
+    width: 100%;
+  }
+
+  .about-page {
+    padding: 50px 20px;
+  }
+
+  .about-header h1 {
+    font-size: 3rem;
+  }
+
+  .about-intro {
+    font-size: 1rem;
+  }
+
+  .about-card {
+    padding: 25px;
+  }
+
+  .education-page {
+    padding: 50px 20px;
+  }
+
+  .education-header h1 {
+    font-size: 3rem;
+  }
+
+  .education-intro {
+    font-size: 1rem;
+  }
+
+  .education-card {
+    padding: 24px;
+  }
+
+  .education-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .professional-page {
+    padding: 50px 20px;
+  }
+
+  .professional-header h1 {
+    font-size: 3rem;
+  }
+
+  .professional-intro {
+    font-size: 1rem;
+  }
+
+  .professional-card {
+    padding: 24px;
+  }
+
+  .professional-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .blog-page {
+    padding: 50px 20px;
+  }
+
+  .blog-header h1 {
+    font-size: 3rem;
+  }
+
+  .blog-intro {
+    font-size: 1rem;
+  }
+
+  .blog-card {
+    padding: 24px;
+  }
+
+  .blog-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .readme-page {
+    padding: 55px 20px;
+  }
+
+  .readme-header {
+    margin-bottom: 40px;
+  }
+
+  .readme-header h1 {
+    font-size: 3rem;
+  }
+
+  .readme-intro {
+    font-size: 1rem;
+  }
+
+  .readme-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 25px;
+  }
+
+  .readme-number {
+    width: 45px;
+    height: 45px;
+  }
+
+  .readme-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .readme-card p {
+    font-size: 0.95rem;
+  }
+
+  .evolution-timeline {
+    padding-left: 25px;
+  }
+
+  .evolution-step {
+    padding-left: 10px;
+  }
+
+  .evolution-step > span {
+    left: -43px;
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  .taxonomy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .taxonomy-item {
+    padding: 20px;
+  }
+
+  .project-structure {
+    padding: 18px;
+    font-size: 0.75rem;
+  }
+
+  .page-navigation {
+    padding: 0 20px 40px;
+    margin-top: 45px;
+  }
+
+  .page-nav-button {
+    min-width: 0;
+    padding: 13px 15px;
+  }
+
+  .page-nav-button small {
+    display: none;
+  }
+
+  .page-nav-arrow {
+    font-size: 20px;
+  }
+}
+
+/* =========================================================
+   CONTACT AND GALLERY RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .picture-grid,
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-page,
+  .gallery-page,
+  .video-gallery-page {
+    padding: 55px 5%;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+}

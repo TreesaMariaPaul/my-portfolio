@@ -1,0 +1,28 @@
+
+/* =========================================================
+   NAVBAR ACTIVE LINK
+   ========================================================= */
+
+.nav-links a.active {
+  color: #facc15;
+  font-weight: 700;
+  border-bottom: 2px solid #facc15;
+  padding-bottom: 5px;
+}
+
+.nav-links a.active:hover {
+  color: #fde047;
+}
+
+/* =========================================================
+   NAVBAR LOGO
+   ========================================================= */
+
+.navbar .logo {
+  color: #facc15;
+  transition: color 0.25s ease;
+}
+
+.navbar .logo:hover {
+  color: #ffffff;
+}

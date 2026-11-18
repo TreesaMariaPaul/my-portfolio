@@ -1,0 +1,126 @@
+
+/* =========================================================
+   CONTACT PAGE
+   ========================================================= */
+
+.contact-page {
+  min-height: 100vh;
+  padding: 80px 8%;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+.contact-header {
+  max-width: 750px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.contact-label {
+  color: #ca9f00;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.contact-header h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin: 15px 0;
+}
+
+.contact-header h1 span {
+  color: #d4a900;
+}
+
+.contact-header p {
+  line-height: 1.8;
+  color: #64748b;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 45px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-information,
+.contact-form {
+  padding: 35px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+}
+
+.contact-information h2 {
+  margin-top: 0;
+}
+
+.contact-information p {
+  line-height: 1.8;
+}
+
+.contact-information a {
+  color: #b38d00;
+  overflow-wrap: anywhere;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #d4a900;
+  border-color: transparent;
+}
+
+.contact-submit {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 7px;
+  background: #d4a900;
+  color: #111827;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.contact-submit:hover {
+  background: #facc15;
+  transform: translateY(-2px);
+}
+
+.contact-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* CONTACT STATUS MESSAGES */
+
+.contact-success {
+  color: #28a745;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.contact-error {
+  color: #dc3545;
+  font-weight: 600;
+  margin-top: 10px;
+}

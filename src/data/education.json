@@ -1,0 +1,19 @@
+
+[
+  {
+    "id": 1,
+    "year": "CURRENT",
+    "qualification": "Master of Science in Software Engineering",
+    "institution": "University of Limerick, Ireland",
+    "description": "Currently pursuing my postgraduate studies in Software Engineering, developing my knowledge of modern software engineering practices, technologies, and development methodologies.",
+    "result": "Currently Pursuing"
+  },
+  {
+    "id": 2,
+    "year": "COMPLETED",
+    "qualification": "Bachelor of Computer Applications",
+    "institution": "SCMS School of Technology and Management",
+    "description": "Completed my undergraduate studies in Computer Applications, building a foundation in programming, software development, databases, and computer technologies.",
+    "result": "BCA"
+  }
+]

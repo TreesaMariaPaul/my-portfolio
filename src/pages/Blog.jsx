@@ -1,11 +1,56 @@
-import PageNavigation from "../components/PageNavigation"
+
+import { useEffect, useState } from "react";
+import PageNavigation from "../components/PageNavigation";
+import Card from "../components/Card";
 
 function Blog() {
+  const postsPerPage = 2;
+
+  const [blogPosts, setBlogPosts] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    async function fetchBlogPosts() {
+      try {
+        const response = await fetch(
+          "http://127.0.0.1:8000/api/blog/"
+        );
+
+        if (!response.ok) {
+          throw new Error("Failed to load blog posts.");
+        }
+
+        const data = await response.json();
+        setBlogPosts(data);
+      } catch (error) {
+        console.error("Blog API error:", error);
+        setError("Unable to load blog posts. Please try again later.");
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchBlogPosts();
+  }, []);
+
+  const totalPages = Math.ceil(blogPosts.length / postsPerPage);
+
+  const startIndex = (currentPage - 1) * postsPerPage;
+
+  const currentPosts = blogPosts.slice(
+    startIndex,
+    startIndex + postsPerPage
+  );
+
+  function changePage(page) {
+    setCurrentPage(page);
+  }
+
   return (
     <main className="blog-page">
-
       <div className="blog-header">
-
         <span className="blog-label">
           MY LEARNING JOURNEY
         </span>
@@ -18,117 +63,97 @@ function Blog() {
           A collection of posts about my experiences, learning journey,
           software development, and technology.
         </p>
-
       </div>
 
-      <div className="blog-grid">
+      {loading && (
+        <p className="blog-loading">Loading blog posts...</p>
+      )}
 
-        <article className="blog-card">
+      {error && (
+        <p className="blog-error" role="alert">
+          {error}
+        </p>
+      )}
 
-          <div className="blog-number">
-            01
+      {!loading && !error && blogPosts.length === 0 && (
+        <p className="blog-empty">
+          No blog posts are available at the moment.
+        </p>
+      )}
+
+      {!loading && !error && blogPosts.length > 0 && (
+        <>
+          <div className="blog-grid">
+            {currentPosts.map((post) => (
+              <Card className="blog-card" key={post.id}>
+                <div className="blog-number">
+                  {String(post.id).padStart(2, "0")}
+                </div>
+
+                <div className="blog-content">
+                  <span className="blog-category">
+                    BLOG POST
+                  </span>
+
+                  <h2>{post.title}</h2>
+
+                  <p>{post.excerpt}</p>
+
+                  <p>{post.content}</p>
+                </div>
+              </Card>
+            ))}
           </div>
 
-          <div className="blog-content">
+          {totalPages > 1 && (
+            <nav
+              className="blog-pagination"
+              aria-label="Blog pages"
+            >
+              <button
+                type="button"
+                onClick={() => changePage(currentPage - 1)}
+                disabled={currentPage === 1}
+              >
+                Previous
+              </button>
 
-            <span className="blog-category">
-              SOFTWARE DEVELOPMENT
-            </span>
+              {Array.from({ length: totalPages }, (_, index) => (
+                <button
+                  type="button"
+                  key={index + 1}
+                  className={
+                    currentPage === index + 1 ? "active" : ""
+                  }
+                  aria-current={
+                    currentPage === index + 1 ? "page" : undefined
+                  }
+                  onClick={() => changePage(index + 1)}
+                >
+                  {index + 1}
+                </button>
+              ))}
 
-            <h2>
-              My Journey into Software Development
-            </h2>
+              <button
+                type="button"
+                onClick={() => changePage(currentPage + 1)}
+                disabled={currentPage === totalPages}
+              >
+                Next
+              </button>
+            </nav>
+          )}
+        </>
+      )}
 
-            <p>
-              My interest in software development began during my
-              studies in computer applications. Through academic
-              projects and practical learning, I developed an interest
-              in creating software solutions and exploring new
-              technologies.
-            </p>
-
-            <p>
-              I am continuing to develop my knowledge of programming,
-              web development, software engineering, and modern
-              technologies as I progress through my studies.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article className="blog-card">
-
-          <div className="blog-number">
-            02
-          </div>
-
-          <div className="blog-content">
-
-            <span className="blog-category">
-              REACT
-            </span>
-
-            <h2>
-              Learning React
-            </h2>
-
-            <p>
-              Learning React has introduced me to component-based
-              development and a different way of building web
-              applications.
-            </p>
-
-            <p>
-              While developing this portfolio, I have learned about
-              React components, routing, state management, and
-              organising a project into reusable sections.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article className="blog-card">
-
-          <div className="blog-number">
-            03
-          </div>
-
-          <div className="blog-content">
-
-            <span className="blog-category">
-              SOFTWARE ENGINEERING
-            </span>
-
-            <h2>
-              Building My Portfolio
-            </h2>
-
-            <p>
-              Developing this portfolio has given me an opportunity
-              to apply software engineering concepts in a practical
-              project.
-            </p>
-
-            <p>
-              The portfolio has evolved through different stages,
-              including creating individual pages, introducing
-              reusable components, adding navigation, and developing
-              interactive features.
-            </p>
-
-          </div>
-
-        </article>
-
-      </div>
-          <PageNavigation previous="/professional-knowledge" previousLabel="Professional Knowledge" next="/readme" nextLabel="Readme" />
-
+      <PageNavigation
+        previous="/professional-knowledge"
+        previousLabel="Professional Knowledge"
+        next="/readme"
+        nextLabel="Readme"
+      />
     </main>
-  )
+  );
 }
 
-export default Blog
+export default Blog;

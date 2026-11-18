@@ -1,0 +1,153 @@
+
+/* =========================================================
+   ABOUT PAGE
+   ========================================================= */
+
+.about-page {
+  min-height: calc(100vh - 80px);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+
+/* ABOUT HEADER */
+
+.about-header {
+  max-width: 800px;
+  margin-bottom: 55px;
+}
+
+.about-label {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 7px 16px;
+  color: #facc15;
+  background: #111111;
+  border: 1px solid #facc15;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.about-header h1 {
+  margin: 0 0 20px;
+  color: #111111;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.about-header h1 span {
+  color: #facc15;
+}
+
+.about-intro {
+  max-width: 720px;
+  color: #555555;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+/* ABOUT GRID */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+/* ABOUT CARDS */
+
+.about-card {
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-top: 4px solid #111111;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+  border-top-color: #facc15;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.about-card h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #111111;
+  font-size: 1.7rem;
+  transition: color 0.25s ease;
+}
+
+.about-card:hover h2 {
+  color: #facc15;
+}
+
+.about-card p {
+  color: #555555;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* INTEREST TAGS */
+
+.interest-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.interest-tags span {
+  padding: 7px 13px;
+  color: #111111;
+  background: #f7f7f7;
+  border: 1px solid #dddddd;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.interest-tags span:hover {
+  color: #111111;
+  background: #facc15;
+  border-color: #facc15;
+}
+
+/* GOAL CARD */
+
+.about-goal {
+  grid-column: 1 / -1;
+  background: #111111;
+  border-top-color: #facc15;
+}
+
+.about-goal h2 {
+  color: #ffffff;
+}
+
+.about-goal p {
+  color: #dddddd;
+}
+
+.about-goal:hover {
+  background: #171717;
+  border-top-color: #fde047;
+}
+
+.about-goal:hover h2 {
+  color: #facc15;
+}

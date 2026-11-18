@@ -1,0 +1,155 @@
+
+/* =========================================================
+   PROFESSIONAL KNOWLEDGE PAGE
+   ========================================================= */
+
+.professional-page {
+  min-height: calc(100vh - 80px);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #fffdf5 0%, #fff8dc 50%, #ffffff 100%);
+  border-radius: 20px;
+}
+
+/* PROFESSIONAL HEADER */
+
+.professional-header {
+  max-width: 800px;
+  margin-bottom: 55px;
+}
+
+.professional-label {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 7px 16px;
+  color: #facc15;
+  background: #111111;
+  border: 1px solid #facc15;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.professional-header h1 {
+  margin: 0 0 20px;
+  color: #111111;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.professional-header h1 span {
+  color: #facc15;
+}
+
+.professional-intro {
+  max-width: 720px;
+  color: #555555;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+/* PROFESSIONAL TIMELINE */
+
+.professional-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.professional-timeline::before {
+  content: "";
+  position: absolute;
+  left: 88px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e5e5e5;
+}
+
+/* PROFESSIONAL CARD */
+
+.professional-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 35px;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-left: 5px solid #111111;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.professional-card:hover {
+  transform: translateY(-5px);
+  border-left-color: #facc15;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* PROFESSIONAL NUMBER */
+
+.professional-number {
+  position: relative;
+  z-index: 2;
+  align-self: start;
+  padding: 10px 12px;
+  color: #111111;
+  background: #facc15;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* PROFESSIONAL CONTENT */
+
+.professional-content h2 {
+  margin: 0 0 12px;
+  color: #111111;
+  font-size: 1.7rem;
+  transition: color 0.25s ease;
+}
+
+.professional-card:hover .professional-content h2 {
+  color: #facc15;
+}
+
+.professional-content p {
+  color: #555555;
+  line-height: 1.8;
+}
+
+/* PROFESSIONAL RESULT */
+
+.professional-result {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 7px 14px;
+  color: #111111;
+  background: #f7f7f7;
+  border: 1px solid #e0e0e0;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.professional-card:hover .professional-result {
+  color: #111111;
+  background: #facc15;
+  border-color: #facc15;
+}

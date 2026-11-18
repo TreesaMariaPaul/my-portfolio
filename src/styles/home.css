@@ -1,0 +1,147 @@
+
+/* =========================================================
+   HOME PAGE
+   ========================================================= */
+
+.home-page {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  padding: 80px 8%;
+  position: relative;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(10, 10, 10, 0.9) 0%,
+      rgba(35, 35, 35, 0.78) 45%,
+      rgba(50, 50, 50, 0.55) 100%
+    ),
+    url("/images/home-bg.avif");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.home-content {
+  max-width: 780px;
+  position: relative;
+  z-index: 2;
+}
+
+.home-label {
+  display: inline-block;
+  margin-bottom: 24px;
+  padding: 8px 17px;
+  color: #facc15;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid #facc15;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  transition:
+    background 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.home-label:hover {
+  background: rgba(250, 204, 21, 0.1);
+  box-shadow: 0 0 15px rgba(250, 204, 21, 0.25);
+  transform: translateY(-2px);
+}
+
+.home-page h1 {
+  margin: 0 0 28px;
+  color: #ffffff;
+  font-size: clamp(3.2rem, 7vw, 5.8rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  max-width: 12ch;
+}
+
+.home-page h1 span {
+  color: #facc15;
+  display: inline-block;
+
+  transition:
+    color 0.25s ease,
+    text-shadow 0.25s ease;
+}
+
+.home-page h1 span:hover {
+  color: #fde047;
+  text-shadow:
+    0 0 10px rgba(250, 204, 21, 0.35),
+    0 0 25px rgba(250, 204, 21, 0.2);
+}
+
+.home-description {
+  max-width: 680px;
+  margin-bottom: 16px;
+  color: #f5f5f5;
+  font-size: 1.08rem;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+
+.home-description strong {
+  color: #facc15;
+  font-weight: 600;
+}
+
+.home-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.home-buttons .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 26px;
+  color: #111111;
+  background: #facc15;
+  border: 2px solid #facc15;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.home-buttons .btn:hover {
+  color: #111111;
+  background: #fde047;
+  border-color: #fde047;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(250, 204, 21, 0.25);
+}
+
+.home-buttons .btn-outline {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid #ffffff;
+}
+
+.home-buttons .btn-outline:hover {
+  color: #111111;
+  background: #facc15;
+  border-color: #facc15;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(250, 204, 21, 0.25);
+}
